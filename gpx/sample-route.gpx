@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="hk-hiking-trails"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1
+       http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>獅子山郊遊徑（範例路線）</name>
+    <desc>由黃大仙出發，登上獅子山頂，全程約 5 公里。</desc>
+    <time>2024-01-01T08:00:00Z</time>
+  </metadata>
+  <trk>
+    <name>獅子山郊遊徑</name>
+    <trkseg>
+      <trkpt lat="22.3428" lon="114.1879"><ele>50</ele><time>2024-01-01T08:00:00Z</time></trkpt>
+      <trkpt lat="22.3445" lon="114.1882"><ele>80</ele><time>2024-01-01T08:05:00Z</time></trkpt>
+      <trkpt lat="22.3462" lon="114.1878"><ele>120</ele><time>2024-01-01T08:10:00Z</time></trkpt>
+      <trkpt lat="22.3478" lon="114.1870"><ele>180</ele><time>2024-01-01T08:15:00Z</time></trkpt>
+      <trkpt lat="22.3492" lon="114.1860"><ele>250</ele><time>2024-01-01T08:22:00Z</time></trkpt>
+      <trkpt lat="22.3504" lon="114.1848"><ele>310</ele><time>2024-01-01T08:30:00Z</time></trkpt>
+      <trkpt lat="22.3516" lon="114.1835"><ele>380</ele><time>2024-01-01T08:38:00Z</time></trkpt>
+      <trkpt lat="22.3524" lon="114.1820"><ele>430</ele><time>2024-01-01T08:45:00Z</time></trkpt>
+      <trkpt lat="22.3530" lon="114.1805"><ele>495</ele><time>2024-01-01T08:52:00Z</time></trkpt>
+      <trkpt lat="22.3536" lon="114.1792"><ele>495</ele><time>2024-01-01T09:00:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>香港行山路線 — 獅子山郊遊徑</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🥾 香港行山路線</h1>
+    <nav>
+      <a href="../index.html">首頁</a>
+      <a href="../index.html#routes">所有路線</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="route-detail">
+      <h2>獅子山郊遊徑（範例路線）</h2>
+      <div class="route-meta">
+        <span>📍 九龍 · 獅子山郊野公園</span>
+        <span>📏 距離：約 5 公里</span>
+        <span>⏱️ 時間：約 2–3 小時</span>
+        <span>⬆️ 升高：約 445 米</span>
+        <span><span class="badge badge-medium">中等</span></span>
+      </div>
+      <p class="route-description">
+        獅子山郊遊徑是香港其中一條最受歡迎的郊遊路線，起點位於黃大仙，沿山脊攀登至獅子山頂（海拔 495 米），
+        可俯瞰九龍半島及維多利亞港的壯麗景色。路線設有清晰路標，全程需時約 2 至 3 小時，
+        適合有一定行山經驗的人士。建議攜帶足夠飲用水及防曬用品。
+      </p>
+      <a class="gpx-download" href="../gpx/sample-route.gpx" download>
+        ⬇ 下載 GPX 檔案
+      </a>
+    </div>
+
+    <div id="map"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 香港行山路線資訊網站 · 資料僅供參考，出行前請留意天氣及官方警告。</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../js/map.js"></script>
+  <script>
+    initRouteMap('map', '../gpx/sample-route.gpx');
+  </script>
+</body>
+</html>
