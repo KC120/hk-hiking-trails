@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>香港行山路線資訊網站</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🥾 香港行山路線</h1>
+    <nav>
+      <a href="#routes">所有路線</a>
+      <a href="#map-section">地圖</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 英雄區塊 -->
+    <section class="hero">
+      <h2>探索香港郊野之美</h2>
+      <p>收錄香港各區熱門行山路線，附 GPX 檔案下載及互動地圖</p>
+    </section>
+
+    <!-- 路線列表 -->
+    <section id="routes">
+      <h2 style="margin-bottom: 20px; color: #2e7d32;">精選路線</h2>
+      <div class="route-grid">
+
+        <a class="route-card" href="routes/sample-route.html">
+          <div class="route-card-img">🦁</div>
+          <div class="route-card-body">
+            <h3>獅子山郊遊徑</h3>
+            <p>由黃大仙出發，登上獅子山頂，可俯瞰九龍及維港全景。</p>
+            <span class="badge badge-medium">中等</span>
+            <span style="font-size:0.85rem; color:#888;">5 公里 · 約 2–3 小時</span>
+          </div>
+        </a>
+
+        <a class="route-card" href="routes/sample-route.html">
+          <div class="route-card-img">🌊</div>
+          <div class="route-card-body">
+            <h3>麥理浩徑（第一段）</h3>
+            <p>香港最著名的長途行山徑，第一段由北潭涌至浪茄，海景壯觀。</p>
+            <span class="badge badge-medium">中等</span>
+            <span style="font-size:0.85rem; color:#888;">10 公里 · 約 4 小時</span>
+          </div>
+        </a>
+
+        <a class="route-card" href="routes/sample-route.html">
+          <div class="route-card-img">🏔️</div>
+          <div class="route-card-body">
+            <h3>鳳凰山登頂</h3>
+            <p>攀登香港最高峰（海拔 934 米），挑戰性強，景色無敵。</p>
+            <span class="badge badge-hard">困難</span>
+            <span style="font-size:0.85rem; color:#888;">8 公里 · 約 4–5 小時</span>
+          </div>
+        </a>
+
+        <a class="route-card" href="routes/sample-route.html">
+          <div class="route-card-img">🌿</div>
+          <div class="route-card-body">
+            <h3>大潭水塘家樂徑</h3>
+            <p>輕鬆易行，沿水塘漫步，適合家庭及初學者。</p>
+            <span class="badge badge-easy">輕鬆</span>
+            <span style="font-size:0.85rem; color:#888;">4 公里 · 約 1.5 小時</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 概覽地圖 -->
+    <section id="map-section">
+      <h2 style="margin-bottom: 16px; color: #2e7d32;">路線位置地圖</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 香港行山路線資訊網站 · 資料僅供參考，出行前請留意天氣及官方警告。</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+  <script>
+    var routes = [
+      { name: '獅子山郊遊徑', lat: 22.3536, lng: 114.1792, url: 'routes/sample-route.html' },
+      { name: '麥理浩徑（第一段）', lat: 22.3863, lng: 114.3459, url: 'routes/sample-route.html' },
+      { name: '鳳凰山登頂', lat: 22.2534, lng: 113.9286, url: 'routes/sample-route.html' },
+      { name: '大潭水塘家樂徑', lat: 22.2508, lng: 114.2125, url: 'routes/sample-route.html' }
+    ];
+    initOverviewMap('map', routes);
+  </script>
+</body>
+</html>
